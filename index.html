@@ -8,7 +8,7 @@
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Dev Icon Fonts-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <!-- CSS do Projeto-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -22,19 +22,47 @@
             <ul id="social-container">
                 <li><a href="https://www.linkedin.com/in/pedrobvf/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
             </ul>
-            <div id="email-container">
+            <div id="email-container" class="contact-item">
                 <ion-icon name="mail-outline"></ion-icon><a href="mailto:pedrobvf@hotmail.com">pedrobvf@hotmail.com</a>
+            </div>
+            <div id="phone-container" class="contact-item">
+                <ion-icon name="call-outline"></ion-icon><a href="tel:+351968283163">+(351) 968283163</a>
             </div>
         </aside>
         <section id="about-container">
             <h1 id="name">Pedro Ferreira</h1>
-            <p id="title"><span class="highlight">Software Engineer and Java Programmer</span></p>
-            <p class="description">I am <span class="highlight">Software Engineer</span>, I describe myself as someone who works with passion and dedication. I am creative, I have the ability to adapt quickly.
-                I did a master's degree in <span class="highlight">Technologies and Knowledge in Decision Making at ISEP</span> at Porto. </p>
-            <p class="description">I have more than 6 years of experience working as a programmer in general, focused on the last years working with
-                <span class="highlight">Java 11, JPA/JPQL, Primefaces/JSF, MySQL 8, Javascript, JasperReports, HTML5, CSS3/LESS, Maven, GIT , PHP, Wordpress.</span></p>
+            <p id="title"><span class="highlight">Java Software Developer</span></p>
+
+            <p class="description">
+                As an experienced IT professional with 8 years of expertise in backend and full stack development, 
+                I bring dedication, hard work, and strong teamwork skills to every project. 
+                I am always eager to learn and tackle new challenges, continually striving to enhance my skills and contribute effectively to my team's success.
+            </p>
+            <p class="description">
+                I hold a Master's degree at <span class="highlight">Technologies and in Decision Knowledge</span> from ISEP 
+                and a Bachelor's degree in <span class="highlight"></span>Computer Engineering</span> from UMa. 
+            </p>
+            <p class="description">
+                Throughout my career, I have worked on various projects, since monolithic and microservices architectures, focusing on the development and maintenance of API creation, database management, defect analysis, etc. 
+            </p>
+            <p class="description">
+                My technical skills include advanced proficiency in <span class="highlight">Java, MySQL, PostgreSQL, </span>
+                and familiarity with frameworks such as <span class="highlight">Spring and Agile/Scrum</span> methodologies.
+            </p>
            
-            <a href="https://github.com/pedrobvferreira" id="btn-projects"><ion-icon name="share-social-outline"></ion-icon><span>See Projects</span></a>
+            <ul class="professional-content">
+                <li>
+                    <a href="https://github.com/pedrobvferreira" id="button" class="project">
+                        <ion-icon name="share-social-outline"></ion-icon><span title="Github projects">See Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="uploads/resume.pdf" target="_blank" id="button" class="curriculum">
+                        <ion-icon name="download-outline"></ion-icon><span title="CV">Download CV</span>
+                    </a>
+                </li>
+            </ul>
+
             <h2 id="skills-section-title">Skills</h2>
             <div id="skills-container">
                 <div class="skills-box">
@@ -45,25 +73,36 @@
                 </div>
                 <div class="skills-box">
                     <p class="skills-title">Back-end</p>
-                    <i class="devicon-java-plain colored" title="Java11"></i>
-                    <i class="devicon-php-plain colored" title="PHP5"></i>
+                    <i class="devicon-java-plain colored" title="Java"></i>
+                    <i class="devicon-php-plain colored" title="PHP"></i>
+                    <i class="devicon-typescript-plain colored" title="Typescript"></i>
                 </div>
                 <div class="skills-box">
                     <p class="skills-title">Databases</p>
-                    <i class="devicon-mysql-plain colored" title="MySQL8"></i>
+                    <i class="devicon-mysql-plain colored" title="MySQL"></i>
+                    <i class="devicon-postgresql-plain colored" title="Postgresql"></i>
+                    <i class="devicon-mongodb-plain colored" title="Mongodb"></i>
                 </div>
                 <div class="skills-box">
-                    <p class="skills-title">Back-end Frameworks</p>
+                    <p class="skills-title">Frameworks</p>
                     <i class="devicon-spring-plain colored" title="Spring Boot"></i>
+                    <i class="devicon-angular-plain colored" title="Angular"></i>
                 </div>
                 <div class="skills-box">
                     <p class="skills-title">Version Control</p>
                     <i class="devicon-git-plain-wordmark colored" title="GIT"></i>
                     <i class="devicon-github-original colored" title="github"></i>
+                    <i class="devicon-gitlab-plain colored" title="gitlab"></i>
                 </div>
                 <div class="skills-box">
                     <p class="skills-title">Tools</p>
-                    <i class="devicon-windows8-plain colored" title="Windows11"></i>
+                    <i class="devicon-maven-plain colored" title="Maven"></i>
+                    <i class="devicon-junit-plain colored" title="Junit"></i>
+                    <i class="devicon-hibernate-plain colored" title="Hibernate"></i>
+                </div>
+                <div class="skills-box">
+                    <p class="skills-title">Operating Systems</p>
+                    <i class="devicon-windows8-plain colored" title="Windows"></i>
                 </div>
             </div>
         </section>

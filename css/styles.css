@@ -83,23 +83,23 @@
   font-size: 30px;
 }
 
-#email-container {
+.contact-item {
   display: flex;
-  justify-content: center;
 }
 
-#email-container ion-icon,
-#email-container a {
+.contact-item ion-icon,
+.contact-item a {
   flex: 1 1 0;
 }
 
-#email-container a {
+.contact-item a {
   color: var(--main-text-color);
   text-decoration: none;
   max-width: 225px;
+  text-align: left;
 }
 
-#email-container ion-icon {
+.contact-item ion-icon {
   color: var(--main-color);
   font-size: 20px;
   margin-right: 5px;
@@ -123,12 +123,18 @@
   margin-bottom: 10px;
 }
 
-#btn-projects {
+.professional-content {
+  list-style: none;
+}
+
+.professional-content li {
+  display: inline-block;
+}
+
+#button {
   font-weight: bold;
   font-size: 16px;
   color: var(--main-text-color);
-  background-color: var(--main-color);
-  border: 2px solid var(--main-color);
   border-radius: 5px;
   text-decoration: none;
   transition: .5s;
@@ -139,18 +145,28 @@
   display: flex;
 }
 
-#btn-projects ion-icon,
-#btn-projects span {
+#button ion-icon,
+#button span {
   flex: 1 1 0;
 }
 
-#btn-projects ion-icon {
+#button ion-icon {
   font-size: 20px;
   max-width: 20px;
 }
 
-#btn-projects:hover {
+#button:hover {
   background-color: transparent;
+}
+
+.project{
+  background-color: #00bfff;
+  border: 2px solid #ffffff;
+}
+
+.curriculum{
+  background-color: #1f2937;
+  border: 2px solid #ffffff;
 }
 
 #skills-section-title {
@@ -218,7 +234,7 @@
     line-height: 26px;
   }
 
-  #btn-projects {
+  #button {
     margin: 20px auto;
   }
 
