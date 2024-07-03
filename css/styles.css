@@ -112,10 +112,10 @@
 /* about container */
 #name {
   font-size: 42px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
-#profession {
+.profession {
   font-size: 24px;
   margin-bottom: 15px;
   font-weight: bold;
@@ -144,7 +144,7 @@
   border-radius: 5px;
   text-decoration: none;
   transition: .5s;
-  margin: 25px 0;
+  margin: 20px 0;
   padding: 12px 10px;
   width: 150px;
   text-align: center;
@@ -189,12 +189,12 @@
 .skills-box {
   flex: 1 1 33%;
   max-width: 33%;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 .skills {
   font-size: 24px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-weight: bold;
   padding-left: 10px;
 }
