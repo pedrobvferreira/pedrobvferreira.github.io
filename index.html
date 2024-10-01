@@ -2,90 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro Ferreira Portfolio</title>
-    <!-- Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- Dev Icon Fonts-->
-    <link rel="stylesheet" type="text/css" ng-href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">    <!-- CSS do Projeto-->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Dev Icon Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Link to external CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <main id="container">
-        <aside id="bio-container">
-            <h2>Pedro Ferreira</h2>
-            <img id="bio-image" src="img/perfil.jpg" alt="Pedro Ferreira">
-            <p>Hello, my name is Pedro Ferreira and I am <span class="highlight">Software engineer</span>.</p>
-            <p id="welcome-text">Welcome!</p>
-            <ul id="social-container">
-                <li><a href="https://www.linkedin.com/in/pedrobvf/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-            </ul>
-            <div id="email-container" class="contact-item">
-                <ion-icon name="mail-outline"></ion-icon><a href="mailto:pedrobvf@hotmail.com">pedrobvf@hotmail.com</a>
-            </div>
-            <div id="phone-container" class="contact-item">
-                <ion-icon name="call-outline"></ion-icon><a href="tel:+351968283163">+(351) 968283163</a>
-            </div>
-        </aside>
-        <section id="about-container">
-            <h1 id="name" class="title">Pedro Ferreira</h1>
-            <p class="profession"><span class="highlight">Java Software Developer</span></p>
 
+    <!-- Sidebar section with bio and contact information -->
+    <div id="bio">
+        <img id="bio-image" src="img/perfil.jpg" alt="Pedro Ferreira">
+        
+        <!-- Contact information -->
+        <div class="contacts">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i><a href="mailto:pedrobvf@hotmail.com">pedrobvf@hotmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i><a href="tel:+351968283163">+(351) 968283163</a>
+            </div>
+        </div>
+
+        <!-- Sidebar menu -->
+        <nav id="side-menu">
+            <ul>
+                <li class="active"><a href="#intro"><i class="fas fa-home"></i> Intro</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills"><i class="fas fa-chart-bar"></i> Skills</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main content section -->
+    <div id="main-content">
+        <!-- Introduction section -->
+        <section id="intro">
+            <h1>Hi, i am Pedro Ferreira</h1>
+            <p class="profession">I'm a Java Software Developer</p>
+
+            <!-- Social Icons -->
+            <div id="social-icons">
+                <ul class="social-container">
+                    <li><a href="https://www.linkedin.com/in/pedrobvf/" target="_blank"><i title="Linkedin" class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/pedrobvferreira" target="_blank"><i title="Github" class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Buttons for CV and Cover Letter downloads -->
+            <div class="professional-content">
+                <a href="downloads/resume.pdf" target="_blank" id="button" class="curriculum">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+                <a href="downloads/cover-letter.pdf" target="_blank" id="button" class="cover-letter">
+                    <i class="fas fa-download"></i> Cover Letter
+                </a>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section id="about">
+            <h2 class="section-title">About</h2>
             <p class="description">
                 As an experienced IT professional with 8 years of expertise in backend and full stack development, 
                 I bring dedication, hard work, and strong teamwork skills to every project. 
                 I am always eager to learn new challenges, continually striving to enhance my skills and contribute effectively to my team's success.
             </p>
             <p class="description">
-                I hold a Master's degree at <span class="highlight">Technologies and in Decision Knowledge</span> from ISEP 
-                and a Bachelor's degree in <span class="highlight">Computer Engineering</span> from UMa. 
+                I hold a Master's degree in <span class="highlight">Technologies and in Decision Knowledge</span> from ISEP 
+                and a Bachelor's degree in <span class="highlight">Computer Engineering</span> from UMa.
             </p>
             <p class="description">
-                Throughout my career, I have worked on various projects, since monolithic and microservices architectures, focusing on the development and maintenance of API creation, database management, defect analysis, etc. 
+                Throughout my career, I have worked on various projects, including monolithic and microservices architectures, focusing on API creation, database management, and defect analysis.
             </p>
             <p class="description">
                 My technical skills include advanced proficiency in <span class="highlight">Java, MySQL, PostgreSQL</span>,
-                and familiarity with frameworks such as <span class="highlight">Spring and Agile/Scrum</span> methodologies.
+                and familiarity with frameworks such as <span class="highlight">Spring Boot</span> and <span class="highlight">Agile/Scrum methodologies</span>.
             </p>
-           
-            <ul class="professional-content">
-                <li>
-                    <a href="https://github.com/pedrobvferreira" target="_blank" id="button" class="project">
-                        <ion-icon name="share-social-outline"></ion-icon><span title="Github projects">See Projects</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="downloads/resume.pdf" target="_blank" id="button" class="curriculum">
-                        <ion-icon name="download-outline"></ion-icon><span title="CV">Download CV</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="downloads/cover-letter.pdf" target="_blank" id="button" class="cover-letter">
-                        <ion-icon name="download-outline"></ion-icon><span title="CV">Cover Letter</span>
-                    </a>
-                </li>
-            </ul>
+        </section>
 
-            <h2 id="skills-section-title" class="title">Skills</h2>
+        <!-- Skills section -->
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
             <div id="skills-container">
                 <div class="skills-box">
                     <p class="skills highlight">Front-end</p>
                     <i class="devicon-html5-plain colored" title="HTML5"></i>
                     <i class="devicon-css3-plain colored" title="CSS3"></i>
-                    <i class="devicon-javascript-plain colored" title="Javascript"></i>
+                    <i class="devicon-javascript-plain colored" title="JavaScript"></i>
                 </div>
                 <div class="skills-box">
                     <p class="skills highlight">Back-end</p>
                     <i class="devicon-java-plain colored" title="Java"></i>
                     <i class="devicon-php-plain colored" title="PHP"></i>
-                    <i class="devicon-typescript-plain colored" title="Typescript"></i>
+                    <i class="devicon-typescript-plain colored" title="TypeScript"></i>
                 </div>
                 <div class="skills-box">
                     <p class="skills highlight">Databases</p>
                     <i class="devicon-mysql-plain colored" title="MySQL"></i>
-                    <i class="devicon-postgresql-plain colored" title="Postgresql"></i>
-                    <i class="devicon-mongodb-plain colored" title="Mongodb"></i>
+                    <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
+                    <i class="devicon-mongodb-plain colored" title="MongoDB"></i>
                 </div>
                 <div class="skills-box">
                     <p class="skills highlight">Frameworks</p>
@@ -95,13 +116,13 @@
                 <div class="skills-box">
                     <p class="skills highlight">Version Control</p>
                     <i class="devicon-git-plain-wordmark colored" title="GIT"></i>
-                    <i class="devicon-github-original colored" title="github"></i>
-                    <i class="devicon-gitlab-plain colored" title="gitlab"></i>
+                    <i class="devicon-github-original colored" title="GitHub"></i>
+                    <i class="devicon-gitlab-plain colored" title="GitLab"></i>
                 </div>
                 <div class="skills-box">
                     <p class="skills highlight">Tools</p>
                     <i class="devicon-maven-plain colored" title="Maven"></i>
-                    <i class="devicon-junit-plain colored" title="Junit"></i>
+                    <i class="devicon-junit-plain colored" title="JUnit"></i>
                     <i class="devicon-hibernate-plain colored" title="Hibernate"></i>
                 </div>
                 <div class="skills-box">
@@ -110,8 +131,9 @@
                 </div>
             </div>
         </section>
-    </main>
-    <!-- Ion Icons-->
-    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </div>
+
+    <!-- Font Awesome Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 </body>
 </html>
