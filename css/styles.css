@@ -30,7 +30,7 @@ body {
 }
 
 /* Sidebar (bio and menu) styles */
-#bio {
+#sidebar {
   width: 250px;
   background-color: var(--bio-bg-color);
   color: var(--main-text-color);
@@ -242,7 +242,7 @@ h2 {
     flex-direction: column;
   }
 
-  #bio {
+  #sidebar {
     min-height: auto;
     border-right: none;
     border-bottom: 5px solid var(--bio-border-color);
