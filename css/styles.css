@@ -51,55 +51,49 @@ body {
   margin-bottom: 20px;
 }
 
-/* Contact section styling */
-.contacts {
-  border-bottom: 1px white solid;
-}
-
-.contact-item {
-  margin-bottom: 20px;
-  text-align: left;
-  display: flex;
-}
-
-.contact-item i {
-  margin-right: 10px;
-  color: var(--main-color);
-}
-
-.contact-item a {
-  color: var(--main-text-color);
-  text-decoration: none;
-  font-size: 14px;
-  display: block;
-}
-
-.contact-item svg {
-  color: var(--main-color);
-  font-size: 20px;
-  margin-right: 5px;
-  max-width: 20px;
+.content-section {
+  position: relative;
 }
 
 /* Social icons */
-#social-icons {
-  margin-bottom: 20px;
+.social-icons {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.social-container {
+.social-icons ul {
   list-style: none;
-  display: flex;
-  justify-content: left;
-  gap: 15px;
+  padding: 0;
+  margin: 0;
 }
 
-.social-container li a {
-  color: var(--main-color);
-  font-size: 28px;
+.social-icons ul li {
+  display: block;
+  margin-left: 10px;
+  font-size: 18px;
 }
 
-.social-container li a:hover {
+.social-icons ul li a {
+  color: #0077b5;
+  text-decoration: none;
+}
+
+.social-icons ul li a:hover {
   color: #F8485E;
+}
+
+.fa-envelope{
+  color: #0077b5;
+}
+.fa-phone{
+  color: #08700d;
+}
+.fa-linkedin{
+  color: #0077b5;
+}
+.fa-github{
+  color: #0a0a0a;
 }
 
 /* Sidebar menu styles */
