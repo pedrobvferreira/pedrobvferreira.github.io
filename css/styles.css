@@ -58,60 +58,50 @@ body {
 /* Social icons */
 .social-icons {
   position: absolute;
-  top: 0;
+  bottom: 20px;
   right: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .social-icons ul {
-  list-style: none;
+  list-style: flex;
+  justify-content: center;
   padding: 0;
   margin: 0;
 }
 
 .social-icons ul li {
-  display: block;
-  margin-left: 10px;
-  font-size: 18px;
+  display: inline-block;
+  margin: 0 10px;
 }
 
 .social-icons ul li a {
-  color: #0077b5;
   text-decoration: none;
+  color: #0077b5;
+  font-size: 20px;
 }
 
 .social-icons ul li a:hover {
   color: #F8485E;
 }
 
-.fa-envelope{
-  color: #0077b5;
-}
-.fa-phone{
-  color: #08700d;
-}
-.fa-linkedin{
-  color: #0077b5;
-}
-.fa-github{
-  color: #0a0a0a;
-}
-
 /* Sidebar menu styles */
-#side-menu {
+.side-menu {
   margin-top: 30px;
   text-align: left;
 }
 
-#side-menu ul {
+.side-menu ul {
   list-style: none;
   padding: 0;
 }
 
-#side-menu ul li {
+.side-menu ul li {
   margin-bottom: 20px;
 }
 
-#side-menu ul li a {
+.side-menu ul li a {
   text-decoration: none;
   color: var(--main-color);
   font-size: 18px;
@@ -120,18 +110,18 @@ body {
   padding: 8px;
 }
 
-#side-menu ul li a i {
+.side-menu ul li a i {
   margin-right: 10px;
   font-size: 24px;
 }
 
 /* Menu item hover and active state */
-#side-menu ul li a:hover {
+.side-menu ul li a:hover {
   background-color: #2E3A4A;
   border-radius: 5px;
 }
 
-#side-menu ul li.active a {
+.side-menu ul li.active a {
   background-color: var(--main-color);
   color: white;
   border-radius: 5px;
