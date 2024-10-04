@@ -235,6 +235,12 @@ h2 {
   color: #F8485E;
 }
 
+.experience {
+  font-size: 16px;
+  color: #777;
+  margin-top: 5px;
+}
+
 /* Education section */
 #education {
   margin-top: 50px;
