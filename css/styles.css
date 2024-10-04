@@ -194,29 +194,45 @@ h2 {
   background-color: #F8485E;
 }
 
-/* Skills section styling */
-#skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 25px;
-}
-
+/* Skills section */
 .skills-box {
-  flex: 1 1 33%;
-  max-width: 33%;
-  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 40px;
 }
 
 .skills {
   font-size: 24px;
-  margin-bottom: 10px;
   font-weight: bold;
-  padding-left: 10px;
+  margin-bottom: 10px;
 }
 
-.skills-box i {
-  font-size: 45px;
-  margin-right: 10px;
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill span {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.stars {
+  color: #FFD700; /* Gold color for stars */
+}
+
+.stars .fa-star,
+.stars .fa-star-half-alt, .fa-star-half-stroke,
+.stars .far {
+  font-size: 20px;
+}
+
+/* Hover effect on stars */
+.stars:hover .fa-star,
+.stars:hover .fa-star-half-alt,
+.stars:hover .fa-star-half-stroke {
+  color: #F8485E;
 }
 
 /* Education section */
