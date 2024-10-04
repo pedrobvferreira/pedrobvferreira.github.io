@@ -1,5 +1,5 @@
 // Select all menu items
-const menuItems = document.querySelectorAll('#side-menu ul li');
+const menuItems = document.querySelectorAll('.side-menu ul li');
 
 // Function to remove 'active' class from all items and add it to the clicked item
 menuItems.forEach(item => {
