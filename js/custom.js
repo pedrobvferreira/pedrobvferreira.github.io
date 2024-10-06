@@ -11,3 +11,8 @@ menuItems.forEach(item => {
     this.classList.add('active');
   });
 });
+
+function toggleMobileMenu() {
+  const smallMenuContainer = document.querySelector('.side-menu-small');
+  smallMenuContainer.classList.toggle('active'); // Alterna a classe 'active'
+}
