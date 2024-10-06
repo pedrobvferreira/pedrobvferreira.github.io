@@ -241,10 +241,6 @@ h2 {
 }
 
 /* Education section */
-#education {
-  margin-top: 50px;
-}
-
 .education-list {
   list-style: none;
   padding: 0;
@@ -332,17 +328,6 @@ h2 {
 
   #content {
     padding: 30px;
-  }
-
-  .skills-box {
-    flex: 1 1 100%;
-    max-width: 100%;
-    margin-bottom: 40px;
-    text-align: left;
-  }
-
-  .skills-box i {
-    font-size: 60px;
   }
 
   .side-menu-large {
