@@ -19,8 +19,8 @@
     <div id="sidebar">
         <img id="bio-image" src="img/perfil.jpg" alt="Pedro Ferreira">
 
-        <!-- Side menu -->
-        <nav class="side-menu">
+        <!-- Side menu large -->
+        <nav class="side-menu-large">
             <ul>
                 <li class="active"><a href="#intro"><i class="fas fa-home"></i> Intro</a></li>
                 <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
@@ -42,6 +42,20 @@
 
     <!-- Main content section -->
     <div id="main-content">
+        <div class="menu-small">
+            <button class="menu-btn" onclick="toggleMobileMenu()">&#9776;</button>
+
+            <!-- Side menu small -->
+            <nav class="side-menu-small">
+                <ul>
+                    <li class="active"><a href="#intro"><i class="fas fa-home"></i> Intro</a></li>
+                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#skills"><i class="fas fa-chart-bar"></i> Skills</a></li>
+                    <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                </ul>
+            </nav>
+        </div>
+        
         <!-- Introduction section -->
         <section id="intro" class="content-section">
             <h1>Hi, I'm Pedro Ferreira</h1>
