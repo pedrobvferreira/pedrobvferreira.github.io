@@ -87,21 +87,21 @@ body {
 }
 
 /* Sidebar menu styles */
-.side-menu {
+.side-menu-large {
   margin-top: 30px;
   text-align: left;
 }
 
-.side-menu ul {
+.side-menu-large ul {
   list-style: none;
   padding: 0;
 }
 
-.side-menu ul li {
+.side-menu-large ul li {
   margin-bottom: 20px;
 }
 
-.side-menu ul li a {
+.side-menu-large ul li a {
   text-decoration: none;
   color: var(--main-color);
   font-size: 18px;
@@ -110,18 +110,18 @@ body {
   padding: 8px;
 }
 
-.side-menu ul li a i {
+.side-menu-large ul li a i {
   margin-right: 10px;
   font-size: 24px;
 }
 
 /* Menu item hover and active state */
-.side-menu ul li a:hover {
+.side-menu-large ul li a:hover {
   background-color: #2E3A4A;
   border-radius: 5px;
 }
 
-.side-menu ul li.active a {
+.side-menu-large ul li.active a {
   background-color: var(--main-color);
   color: white;
   border-radius: 5px;
@@ -265,12 +265,61 @@ h2 {
   color: var(--text-color);
 }
 
-/* Mobile responsiveness */
-@media(max-width: 450px) {
-  #container {
-    flex-direction: column;
-  }
+.menu-small {
+  position: relative; /* Para posicionar o side-menu em relação a este elemento */
+  display: none; /* Esconde o menu pequeno por padrão */
+}
 
+.menu-btn {
+  position: absolute; /* Para posicionar o botão no canto superior direito */
+  top: 10px; /* Ajuste conforme necessário */
+  right: 10px; /* Ajuste conforme necessário */
+  background-color: #007BFF; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Sem borda */
+  padding: 10px; /* Padding do botão */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  font-size: 18px; /* Tamanho da fonte do botão */
+  z-index: 1001;
+}
+
+.side-menu-small {
+  display: none; /* Esconde o menu lateral por padrão */
+  position: absolute; /* Para que ele abra abaixo do botão */
+  top: 50px; /* Ajuste conforme necessário para abrir abaixo do botão */
+  right: 10px; /* Alinha o menu com o botão */
+  background-color: #fff; /* Cor de fundo do menu */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para o menu */
+  width: 200px; /* Largura do menu */
+  z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+}
+
+.side-menu-small.active {
+  display: block; /* Mostra o menu quando ativo */
+}
+
+.side-menu-small ul {
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0; /* Remove o padding padrão */
+  margin: 0; /* Remove a margem padrão */
+}
+
+.side-menu-small ul li {
+  padding: 10px 15px; /* Padding dos itens do menu */
+}
+
+.side-menu-small ul li a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: #333; /* Cor do texto dos links */
+}
+
+/* Efeitos de hover nos itens do menu */
+.side-menu-small ul li:hover {
+  background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+}
+
+/* Mobile responsiveness */
+@media(max-width: 932px) {
   #sidebar {
     min-height: auto;
     border-right: none;
@@ -290,5 +339,13 @@ h2 {
 
   .skills-box i {
     font-size: 60px;
+  }
+
+  .side-menu-large {
+    display: none; /* Hide large menu */
+  }
+
+  .menu-small {
+    display: block; /* Mostra o menu pequeno em telas menores */
   }
 }
