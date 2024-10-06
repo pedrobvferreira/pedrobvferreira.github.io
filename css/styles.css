@@ -241,10 +241,6 @@ h2 {
 }
 
 /* Education section */
-#education {
-  margin-top: 50px;
-}
-
 .education-list {
   list-style: none;
   padding: 0;
@@ -321,24 +317,17 @@ h2 {
 /* Mobile responsiveness */
 @media(max-width: 932px) {
   #sidebar {
-    min-height: auto;
-    border-right: none;
-    border-bottom: 5px solid var(--bio-border-color);
+    display: none;
+    width: 0;
+    padding: 0;
+  }
+
+  #main-content {
+    margin-left: 0;
   }
 
   #content {
     padding: 30px;
-  }
-
-  .skills-box {
-    flex: 1 1 100%;
-    max-width: 100%;
-    margin-bottom: 40px;
-    text-align: left;
-  }
-
-  .skills-box i {
-    font-size: 60px;
   }
 
   .side-menu-large {
