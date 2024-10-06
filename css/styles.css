@@ -321,9 +321,13 @@ h2 {
 /* Mobile responsiveness */
 @media(max-width: 932px) {
   #sidebar {
-    min-height: auto;
-    border-right: none;
-    border-bottom: 5px solid var(--bio-border-color);
+    display: none;
+    width: 0;
+    padding: 0;
+  }
+
+  #main-content {
+    margin-left: 0;
   }
 
   #content {
