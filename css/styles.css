@@ -57,10 +57,7 @@ body {
 
 /* Social icons */
 .social-icons {
-  position: absolute;
-  bottom: 20px;
-  right: 0;
-  width: 100%;
+  margin-top: 40px;
   text-align: center;
 }
 
