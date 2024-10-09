@@ -48,7 +48,6 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  margin-bottom: 20px;
 }
 
 .content-section {
@@ -85,7 +84,7 @@ body {
 
 /* Sidebar menu styles */
 .side-menu-large {
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: left;
 }
 
