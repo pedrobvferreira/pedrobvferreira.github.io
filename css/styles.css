@@ -194,27 +194,62 @@ h2 {
   background-color: #F8485E;
 }
 
+/* Styling for the star ratings legend */
+.stars-legend {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 10px;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stars-legend h3 {
+  font-size: 18px;
+  color: var(--main-color);
+  text-align: center;
+}
+
+.stars-legend ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stars-legend ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
 /* Skills section */
+.skills-container {
+  display: inline-block;
+}
+
 .skills-box {
   display: inline-block;
   vertical-align: top;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .skills {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .skill {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  min-height: 70px;
 }
 
 .skill span {
   display: block;
-  font-size: 18px;
-  margin-bottom: 5px;
+  font-size: 15px;
   color: black;
 }
 
@@ -225,7 +260,7 @@ h2 {
 .stars .fa-star,
 .stars .fa-star-half-alt, .fa-star-half-stroke,
 .stars .far {
-  font-size: 15px;
+  font-size: 12px;
 }
 
 /* Hover effect on stars */
@@ -236,8 +271,95 @@ h2 {
 }
 
 .experience {
-  font-size: 16px;
+  font-size: 12px;
   color: #777;
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Timeline items */
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* Ano posicionado à esquerda do ponto */
+.timeline-year {
+  flex-basis: 100px;
+  text-align: right;
+  padding-right: 10px; /* Ajusta o espaçamento à direita do ano */
+}
+
+.timeline-year p {
+  color: black;
+  padding: 5px 10px;
+  font-weight: bold;
+  display: inline-block;
+  background-color: transparent; /* Remove fundo preto */
+}
+
+/* Linha conectando os itens da linha do tempo */
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 120px; /* Ajusta a linha para ficar ao lado do ano e ponto */
+  width: 2px;
+  background-color: #ccc;
+}
+
+/* Ponto da linha do tempo */
+.timeline-item:before {
+  content: "";
+  position: absolute;
+  left: 110px; /* Ajusta o ponto para ficar alinhado com a linha */
+  top: 50%; /* Centraliza o ponto verticalmente no item da timeline */
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #F8485E;
+  border-radius: 50%;
+}
+
+/* Posicionamento do conteúdo */
+.timeline-content {
+  border-radius: 5px;
+  position: relative;
+  width: 100%;
+  margin-left: 150px; /* Move o conteúdo para a direita para não sobrepor o ponto */
+}
+
+.timeline-content h3 {
+  color: #00BFFF;
+  margin-bottom: 5px;
+}
+
+.timeline-content h4 {
+  color: #000;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #000;
+}
+
+.timeline-content ul {
+  padding-left: 20px;
+}
+
+.timeline-content ul li {
+  list-style-type: disc;
+  color: #000;
 }
 
 /* Education section */
