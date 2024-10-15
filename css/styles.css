@@ -197,15 +197,14 @@ h2 {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 5px;
-  font-size: 8px;
+  padding: 10px;
+  font-size: 10px;
   color: #333;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-right: 5px;
 }
 
 .stars-legend h3 {
-  font-size: 14px;
+  font-size: 18px;
   color: var(--main-color);
   text-align: center;
 }
@@ -386,23 +385,21 @@ h2 {
 }
 
 .menu-btn {
-  position: absolute; /* Para posicionar o botão no canto superior direito */
-  top: 10px; /* Ajuste conforme necessário */
-  right: 10px; /* Ajuste conforme necessário */
+  position: fixed; /* Para posicionar o botão no canto superior direito */
+  top: 0; /* Ajuste conforme necessário */
   background-color: #007BFF; /* Cor de fundo do botão */
   color: white; /* Cor do texto do botão */
   border: none; /* Sem borda */
-  padding: 10px; /* Padding do botão */
+  padding: 6px; /* Padding do botão */
   cursor: pointer; /* Muda o cursor para indicar que é clicável */
-  font-size: 18px; /* Tamanho da fonte do botão */
+  font-size: 20px; /* Tamanho da fonte do botão */
   z-index: 1001;
 }
 
 .side-menu-small {
   display: none; /* Esconde o menu lateral por padrão */
-  position: absolute; /* Para que ele abra abaixo do botão */
-  top: 50px; /* Ajuste conforme necessário para abrir abaixo do botão */
-  right: 10px; /* Alinha o menu com o botão */
+  position: fixed; /* Para que ele abra abaixo do botão */
+  margin-left: 30px;
   background-color: #fff; /* Cor de fundo do menu */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para o menu */
   width: 200px; /* Largura do menu */
